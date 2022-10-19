@@ -1,33 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Store Page</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="top-bar">
-        <h1 id="store-logo">Amazon</h1>
-        <p id="bottom-logo">prime</p>
-        <input type="search" id="site-search" name="q">
-        <button id="search-button">Search</button>
-        <button id="login">login</button>
+      <h1 class="store-logo">amazon</h1>
+      <input type="search" id="site-search" name="q" />
+      <button id="search-button">Search</button>
+      <button id="login">
+        Hello, Sign in <br />
+        <b>Account & lists</b>
+      </button>
+      <button id="ret-but">Returns <br /><b>& Orders</b></button>
+      <button id="cart">Cart</button>
+      <span id="a">
+        <button id="address-1">Hello</button>
+        <button id="address-2">Select your address</button>
+      </span>
     </div>
 
-    <nav>
-        <button>Home</button>
-        <button>Store</button>
-        <button>Contact</button>
-        <button>Support</button>
-        
-        
-    </nav>
-    
-</body>
-<script src="main.js"></script>
+    <div id="nav-bar">
+      <nav id="nav-bar-buttons">
+        <div id="ham-box"></div>
+        <div class="container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+
+        <a class="nav-b" href="">All</a>
+
+        <a class="nav-a" href="">Best Sellers</a>
+        <a class="nav-a" href="">Amazon Basics</a>
+        <a class="nav-a" href="">Today's Deals</a>
+        <a class="nav-a" href="">Customer Service</a>
+        <a class="nav-a" href="">Prime</a>
+        <a class="nav-a" href="">New Releases</a>
+        <a class="nav-a" href="">Music</a>
+        <a class="nav-a" href="">Books</a>
+        <a class="nav-a" href="">Pharmacy</a>
+        <a class="nav-a" href="">Registry</a>
+        <a class="nav-a" href="">Amazon Home</a>
+        <a class="nav-a" href="">Fashion</a>
+        <a class="nav-a" href="">Kindle Books</a>
+        <a class="nav-a" href="">Gift cards</a>
+        <a class="nav-a" href="">Toys & Games</a>
+        <a class="nav-a" href="">Sell</a>
+      </nav>
+    </div>
+  </body>
+  <script src="main.js"></script>
 </html>
-
-
-

@@ -15,32 +15,36 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Store Page</title>
+    <title>Amazon.com. Spend less.</title>
   </head>
   <body>
     <div id="top-bar">
       <h1 class="store-logo">amazon</h1>
       <input type="search" id="site-search" name="q" />
-      <button id="search-button">Search</button>
+      <button id="search-button">Go!</button>
       <button id="login">
         Hello, Sign in <br />
         <b>Account & lists</b>
       </button>
       <button id="ret-but">Returns <br /><b>& Orders</b></button>
       <button id="cart">Cart</button>
-      <span id="a">
+      <div class="address-box" onclick="myClick()">
+        </div>
         <button id="address-1">Hello</button>
         <button id="address-2">Select your address</button>
-      </span>
+      
     </div>
 
     <div id="nav-bar">
       <nav id="nav-bar-buttons">
-        <div id="ham-box"></div>
+        
         <div class="container" onclick="myFunction(this)">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
+        </div>
+        <div class="ham-box">
+
         </div>
 
         <a class="nav-b" href="">All</a>
@@ -62,6 +66,22 @@
         <a class="nav-a" href="">Toys & Games</a>
         <a class="nav-a" href="">Sell</a>
       </nav>
+    </div>
+
+    <div class="w-box-1">
+
+    </div>
+    <div class="w-box-2">
+        
+    </div>
+    <div class="w-box-3">
+        
+    </div>
+    <div class="w-box-4">
+        
+    </div>
+    <div class="w-box-5">
+        
     </div>
   </body>
   <script src="main.js"></script>

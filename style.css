@@ -1,9 +1,8 @@
 body {
   background-color: rgb(184, 190, 190);
   scroll-behavior: smooth;
-  width: auto;
-  height: auto;
-  
+  width: 100%vw;
+  height: 100%vh;
 }
 
 #top-bar {
@@ -11,11 +10,10 @@ body {
   color: rgb(255, 255, 255);
   font-family: sans-serif;
   margin-top: -60px;
-  margin-left: -8px;
-  margin-right: -8px;
   margin-bottom: 0px;
+  margin-left: -8px;
   height: 60px;
-  width: auto;
+  width: 100vw;
   padding-bottom: 5px;
 }
 .store-logo {
@@ -35,6 +33,22 @@ body {
   border-radius: 1px;
   border: none;
 }
+#menu-button{
+  text-decoration: none;
+}
+.home-box{
+  border: 1px solid transparent;
+  position: absolute;
+  width: 120px;
+  height: 32px;
+  margin-left: 8px;
+  margin-top: -55px;
+  z-index: 1;
+  padding: 4px 4px;
+}
+.home-box:hover{
+  border-color: rgb(255, 255, 255);
+}
 
 .address-box {
   border: 1px solid transparent;
@@ -42,7 +56,7 @@ body {
   width: 135px;
   height: 36px;
   margin-left: 170px;
-  margin-top: -55px;
+  margin-top: -60px;
   z-index: 1;
   padding: 4px 4px;
 }
@@ -118,10 +132,10 @@ body {
   background-color: rgb(247, 148, 77);
   color: #050505;
   font-weight: bold;
-  border-color: transparent;
+  border: 1px solid rgb(247, 148, 77);
 }
-#search-button:hover{
-    border: 2px solid black;
+#search-button:hover {
+  border: 1px solid black;
 }
 
 input:focus,
@@ -160,7 +174,6 @@ select:focus {
   padding-left: 5px;
   height: 40px;
   margin-right: -8px;
-  
 }
 #nav-bar-buttons {
   margin-left: 5px;
@@ -190,109 +203,62 @@ select:focus {
   position: static;
   border: 1px solid transparent;
 }
-.nav-b {
-  float: left;
-  color: #ffffff;
-  text-decoration: none;
-  margin: 14px 10px 6px 3px;
-  font-family: "Open Sans";
-  font-weight: 500;
-  height: 12px;
-  line-height: 1em;
-  position: static;
-  border: 1px solid transparent;
-}
 
 .nav-a:hover {
   border: 1px solid #ffffff;
   border-radius: 1px;
   overflow: hidden;
 }
+.center-squares{
+  margin: 0 auto 0 auto;
+  
+}
 
-.container {
-  cursor: pointer;
-  float: left;
-  margin-top: 13px;
-  margin-left: 15px;
+.w-box-1 {
+  width: 330px;
+  height: 400px;
+  background-color: #ffffff;
+  z-index: -1;
   position: relative;
+  margin: 100px 0 0 250px;
+  justify-content: center;
+}
+.w-box-2 {
+  width: 330px;
+  height: 400px;
+  background-color: #ffffff;
+  z-index: -1;
+  position: relative;
+  margin: -400px 0 0 600px;
+  justify-content: center;
+}
+.w-box-3 {
+  width: 330px;
+  height: 400px;
+  background-color: #ffffff;
+  z-index: -1;
+  position: relative;
+  margin: -400px 0 0 950px;
+  justify-content: center;
+}
+.w-box-4 {
+  width: 330px;
+  height: 400px;
+  background-color: #ffffff;
+  z-index: -1;
+  position: relative;
+  margin: -400px 0 0 1300px;
+  justify-content: center;
+}
+.w-box-5 {
+  width: 300px;
+  height: 150px;
+  background-color: #555555;
+  z-index: -1;
+  position: relative;
+  margin: -380px 0 0 265px;
 }
 
-.bar1,
-.bar2,
-.bar3 {
-  width: 15px;
-  height: 2px;
-  background-color: rgb(255, 255, 255);
-  margin: 3px 0;
-  transition: 0.4s;
-}
-#ham-menu:hover {
-  border: 1px solid #ffffff;
-  border-radius: 1px;
-  overflow: hidden;
-}
-.ham-box {
-  border: 1px solid transparent;
-  width: 45px;
-  position: absolute;
-  margin-top: 5px;
-  margin-left: 10px;
-  height: 28px;
-  z-index: 1;
-}
-
-.ham-box:hover {
-  border: 1px solid #ffffff;
-  border-radius: 1px;
-}
-
-.w-box-1{
-    width: 330px;
-    height: 400px;
-    background-color: #ffffff;
-    z-index: -1;
-    position: relative;
-    margin: 100px 0 0 250px;
-    
-
-}
-.w-box-2{
-    width: 330px;
-    height: 400px;
-    background-color: #ffffff;
-    z-index: -1;
-    position: relative;
-    margin: -400px 0 0 600px;
-    
-
-}
-.w-box-3{
-    width: 330px;
-    height: 400px;
-    background-color: #ffffff;
-    z-index: -1;
-    position: relative;
-    margin: -400px 0 0 950px;
-    
-
-}
-.w-box-4{
-    width: 330px;
-    height: 400px;
-    background-color: #ffffff;
-    z-index: -1;
-    position: relative;
-    margin: -400px 0 0 1300px;
-    
-
-}
-.w-box-5{
-    width: 300px;
-    height: 150px;
-    background-color: #555555;
-    z-index: -1;
-    position: relative;
-    margin: -380px 0 0 265px;
-    
-
+.center-squares {
+  width: 100vw;
 }
